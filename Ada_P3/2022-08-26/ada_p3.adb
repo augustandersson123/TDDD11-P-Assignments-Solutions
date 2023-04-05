@@ -41,30 +41,18 @@ procedure Ada_P3 is
       
    begin 
       
-      -- Detta ger fel vid ordning av utskriften men det borde väl vara rätt? Det är som att den loopar fel.
-      --  for Y_Index in Character range 'w'..'x' loop
-      --  	 for X_Index in reverse 24..27 loop 
-      --  	    Put(Matrix(X_Index, Y_Index), Fore => 0, Aft => 1, Exp => 0); 
-      --  	    Put(" "); 
-      --  	 end loop; 
-      --  end loop; 
-      
       for X_Index in reverse 24..27 loop -- Gör generell
       	 for Y_Index in Character range 'w'..'x' loop 
       	    Put(Matrix(X_Index, Y_Index), Fore => 1, Aft => 1, Exp => 0);
 	    
       	    -- Ett mellanslag ska endast skrivas ut mellan datan, inte efter sista datat
-      	    
-	 --   Put(" "); 
 	    
       	    if (X_Index /= 24) and (Y_Index /= 'x') then 
       	       Put(" "); -- Möjligen inte ett mellanslag efter sista, lös med villkor
       	    end if; 
 	    
       	 end loop;
-	 
-	 
---	 Put(" ");  
+
 	 
       end loop; 
 	    	   
