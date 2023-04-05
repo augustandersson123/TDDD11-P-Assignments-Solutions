@@ -3,7 +3,7 @@ Solutions to some P-Assignments from the course [TDDD11, Foundational Programmin
 
 P-Assignments are distinct from O-assignments in this course. 
 O-assignments make up the regular lab series, a total of 5 hp (credits), which is graded with Pass or Fail. 
-P-assignments are given every week and come in three levels. These levels correspond to the grades 3, 4 and 5. 
+P-assignments are given every week and come in three levels of difficulty. These levels correspond to the grades 3, 4 and 5. 
 In order to unlock a P-assignment at a higher level, the student must pass the P-assignment at the proceeding level. 
 
 Types of P-assignments and corresponding grade upon succesful completion: 
