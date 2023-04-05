@@ -1,0 +1,12 @@
+with Ada.Text_IO;      use Ada.Text_IO; 
+
+
+procedure Ada_P2 is 
+   
+   
+begin 
+   
+   
+   
+   
+end Ada_P2; 

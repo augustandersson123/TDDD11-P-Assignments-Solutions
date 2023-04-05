@@ -1,0 +1,117 @@
+======================================================================
+               Ada.P2 - Underprogram och problemlösning
+======================================================================
+Skapa ett program som löser följande 3 deluppgifter i samma program!
+
+Ditt program skall sen fungera som körexemplet visar.
+Krav för uppgiften finns på hemsidan.
+
+======================================================================
+
+Deluppgift 1:
+-------------
+Skriv ett underprogram som har två eller tre parametrar.
+
+Den första parametern är en sträng och den andra är ett tecken.
+
+Underprogrammet skall läsa in dessa två värden från tangentbordet och sedan
+skicka tillbaka dessa värden till huvudprogrammet. Alla ledtexter som behövs
+för inläsningen skall skrivas ut i underprogrammet.
+
+Dessutom skall underprogrammet beräkna resultatet då dessa adderas (de två tal
+som finns i de första två parametrarna) och skicka tillbaka resultatet (i
+heltalsform avrundat uppåt) till huvudprogrammet.
+
+Vi antar att det som användaren matar in innehåller värden som går att tolka
+som tal, oavsett datatyp vi matar in data till, eller att de åtministone går
+att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 2:
+-------------
+Skriv ett underprogram som från huvudprogrammet tar in ett heltal (endast en
+parameter i parameterlistan). Underprogrammet skall subtrahera heltalet med
+32.7 och skicka tillbaka det i flyttalsform avrundat till närmaste heltal till
+huvudprogrammet.
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 3:
+-------------
+Skapa ett underprogram som från huvudprogrammet tar in en sträng med exakt 3
+tecken och ett flyttal och skickar tillbaka resultatet då dessa adderas.
+Resultatet skall skickas i flyttalsform avrundat till närmaste heltal uppåt.
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+======================================================================
+
+Körexempel 1:
+-------------
+Mata in en sträng med exakt 3 tecken: 120
+Mata in ett tecken: 2
+Du matade in strängen: 120 och tecknet: 2 och summan blev         122
+
+Mata in ett heltal: 120
+differensen mellan 120 och 32.7 blir 87.0
+
+Mata in en sträng: 120
+Mata in ett flyttal: -21.8
+Den beräknade summan av 120 och -21.8 blir 99.0
+
+
+Körexempel 2:
+-------------
+Mata in en sträng med exakt 3 tecken: 120
+Mata in ett tecken: 6
+Du matade in strängen: 120 och tecknet: 6 och summan blev         126
+
+Mata in ett heltal: -83
+differensen mellan -83 och 32.7 blir -116.0
+
+Mata in en sträng: 120
+Mata in ett flyttal: 421.3
+Den beräknade summan av 120 och 421.3 blir 542.0
+
+
+Körexempel 3:
+-------------
+Mata in en sträng med exakt 3 tecken: -67
+Mata in ett tecken: 2
+Du matade in strängen: -67 och tecknet: 2 och summan blev         -65
+
+Mata in ett heltal: 0
+differensen mellan 0 och 32.7 blir -33.0
+
+Mata in en sträng: -67
+Mata in ett flyttal: -21.8
+Den beräknade summan av -67 och -21.8 blir -88.0
+
+
+Körexempel 4:
+-------------
+Mata in en sträng med exakt 3 tecken: -67
+Mata in ett tecken: 6
+Du matade in strängen: -67 och tecknet: 6 och summan blev         -61
+
+Mata in ett heltal: 120
+differensen mellan 120 och 32.7 blir 87.0
+
+Mata in en sträng: -67
+Mata in ett flyttal: 421.3
+Den beräknade summan av -67 och 421.3 blir 355.0
+
+

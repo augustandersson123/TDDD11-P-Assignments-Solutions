@@ -1,0 +1,46 @@
+with Ada.Text_IO;   use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Text_IO; 
+with Ada.Float_Text_IO; use Ada.Float_Text_IO; 
+
+
+
+
+procedure Ada_P3 is 
+   
+   -- Ytterst 
+   -- Sedan  
+   -- Sedan
+   
+   -- OBS ska använda flera rader för deklaration av datatyper
+   -- Innersta datatypen 
+   -- ex:  type Matrix is 
+   --           array(24..27, 'w'..'x') of Float; 
+   
+   -- Nästa datatyp
+   -- ex: 
+   --  type Post_Type is 
+   --     record
+   --  	 H : Matrix; 
+   --  	 R : Matrix; 
+   --     end record; 
+   
+   -- Yttersta datatypen
+   --  type T_Type is 
+   --           array('K'..'N') of Post_Type; 
+   
+   -- Huvudprogrammets variabel
+-- ex:   T : T_Type; 
+   
+   -- Tänk på mellanslagen - Kan vara Get för annat än Integer och Float, tänk på mellanslagen innan i så fall 
+   
+begin 
+   
+   Put("Mata in datamängd: "); 
+  -- ex: Get(T); 
+   
+   
+   Put("Inmatad datamängd: "); 
+ -- ex:  Put(T);
+   
+   
+end Ada_P3; 

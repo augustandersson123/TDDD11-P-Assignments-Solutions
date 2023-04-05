@@ -1,0 +1,91 @@
+=======================================================================
+          Ada.P3 - Skapande och hantering av en datastruktur
+=======================================================================
+
+*** OBS! De krav som finns på hemsidan för Ada.P3 ingår i uppgiften.
+*** Se hemsidan för dessa krav. Vi tar inte med alla krav här för att
+*** ni skall kunna läsa dessa i lugn och ro innan P-passet.
+
+I denna uppgift skall du skapa den datastruktur som motsvarar bilden
+nedan. Det är av stor vikt att se till att datastrukturen verkligen är
+den som motsvarar bilden. Även om programmet rent funktionellt är "ok"
+kommer det inte att vara godkänt att ha en annan datastruktur.
+
+Om det finns identifierare i figuren skall dessa ha samma namn i ditt
+program.
+
+I denna uppgift kan det förekomma matriser (tvådimensionella fält),
+fält och poster. Dessa ligger antagligen inuti varandra och det är då
+viktigt att du visar att du kan skapa dessa datatyper på ett korrekt
+sätt.
+
+De data som matas in i körexemplet finns i bilden av datastrukturen
+och det är alltså meningen att de data som matas in skall hamna på de
+positioner i datastrukturen som visas.
+
+Ditt program skall alltså läsa in data från tangentbordet och lagra
+dessa data i datastrukturen för att sen skriva ut dessa data ifrån
+datastrukturen (d.v.s. inte samtidigt som datat läses in eller från
+andra variabler etc.).
+
+Inläsningen av själva datat (inte ledtexten) skall ske inuti ett
+underprogram som heter "Get" med endast en parameter (den aktuella
+datastrukturen).
+
+Utskriften av själva datat (inte ledtexten) skall ske i underprogramet
+"Put" med endast en parameter (den aktuella datastrukturen).
+
+OBS! Du får förstås inte använda dig av sidoeffekter (användande av
+globala data/variabler) i underprogrammen utan att skicka med dessa
+som parametrar. Det är alltid ok att ha konstanter global och använda
+dem överallt (även i underprogrammen). Det är detta just dessa är till
+för.
+
+Det är helt ok att skapa fler underprogram än detta. Huvudprogrammet
+skall dock endast anropa de två beskrivna ovan.
+
+
+=======================================================================
+Datastruktur att implementera:
+=======================================================================
+
+   ┌─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+   │   ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────┐ │
+T: │ U │     ┌────────────────────────┬────────────────────────┬────────────────────────┬────────────────────────┐ │ │
+   │   │     │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ │ │
+   │   │ '3' │ │ -814 │ -768 │ -605 │ │ │ -308 │ -546 │ 390  │ │ │ 150  │ 868  │ -133 │ │ │ -622 │ -669 │ 396  │ │ │ │
+   │   │     │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ │ │
+   │   │     │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │ │ │
+   │   │     ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤ │ │
+   │   │     │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ │ │
+   │   │ '4' │ │ 896  │ -411 │ 139  │ │ │ 813  │ -172 │ 173  │ │ │ -334 │ -995 │ -159 │ │ │ 787  │ -919 │ -247 │ │ │ │
+   │   │     │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ │ │
+   │   │     │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │ │ │
+   │   │     ├────────────────────────┼────────────────────────┼────────────────────────┼────────────────────────┤ │ │
+   │   │     │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ ┌──────┬──────┬──────┐ │ │ │
+   │   │ '5' │ │ 293  │ -500 │ 162  │ │ │ -19  │ 477  │ -660 │ │ │ 757  │ 85   │ 675  │ │ │ 831  │ -526 │ -542 │ │ │ │
+   │   │     │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ └──────┴──────┴──────┘ │ │ │
+   │   │     │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │   -33    -34    -35    │ │ │
+   │   │     └────────────────────────┴────────────────────────┴────────────────────────┴────────────────────────┘ │ │
+   │   │                 'O'                      'P'                      'Q'                      'R'            │ │
+   │   └───────────────────────────────────────────────────────────────────────────────────────────────────────────┘ │
+   │   ┌──────────────┐                                                                                              │
+   │ X │    ┌───────┐ │                                                                                              │
+   │   │ 70 │ "Haf" │ │                                                                                              │
+   │   │    ├───────┤ │                                                                                              │
+   │   │ 69 │ "0pv" │ │                                                                                              │
+   │   │    ├───────┤ │                                                                                              │
+   │   │ 68 │ "fV3" │ │                                                                                              │
+   │   │    ├───────┤ │                                                                                              │
+   │   │ 67 │ "dln" │ │                                                                                              │
+   │   │    └───────┘ │                                                                                              │
+   │   └──────────────┘                                                                                              │
+   └─────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+=======================================================================
+Körexempel:
+=======================================================================
+Mata in datamängd: 162 -500 293 -660 477 -19 675 85 757 -542 -526 831 139 -411 896 173 -172 813 -159 -995 -334 -247 -919 787 -605 -768 -814 390 -546 -308 -133 868 150 396 -669 -622 Haf 0pv fV3 dln
+Inmatad datamängd: 396 -669 -622 -133 868 150 390 -546 -308 -605 -768 -814 -247 -919 787 -159 -995 -334 173 -172 813 139 -411 896 -542 -526 831 675 85 757 -660 477 -19 162 -500 293 dln fV3 0pv Haf
+=======================================================================

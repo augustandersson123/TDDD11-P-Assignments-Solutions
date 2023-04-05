@@ -1,0 +1,30 @@
+with Ada.Text_IO;     use Ada.Text_IO; 
+
+
+procedure Ada_P2 is 
+   
+   
+   
+   -- Del 1 funktion 
+   function Area(S : in Character) return Float is 
+      
+      Area : Float; 
+      
+   begin 
+      
+      Area := Float'Val(S) * Float'Val(S); 
+      
+      return Area; 
+      
+      
+   end Area; 
+      
+   
+   
+begin 
+   
+   
+   
+   
+   
+end Ada_P2; 

@@ -1,0 +1,40 @@
+with Ada.Text_IO;   use Ada.Text_IO;
+with Ada.Integer_Text_IO; use Ada.Text_IO; 
+with Ada.Float_Text_IO; use Ada.Float_Text_IO; 
+
+
+
+
+procedure Ada_P3 is 
+   
+   -- Ytterst array 
+   -- Sedan post 
+   -- Sedan matris
+   
+   
+   type Matrix is array(24..27, 'w'..'x') of Float; 
+   
+   type Post_Type is 
+      record
+	 H : Matrix; 
+	 R : Matrix; 
+      end record; 
+   
+   type T_Type is array('K'..'N') of Post_Type; 
+   
+   -- Huvudprogrammets variabel
+   T : T_Type; 
+   
+begin 
+   
+   Put("Mata in datamängd: "); 
+   Get(T); 
+   
+   
+   Put("Inmatad datamängd: "); 
+   Put(T);
+   
+   
+end Ada_P3; 
+			  
+

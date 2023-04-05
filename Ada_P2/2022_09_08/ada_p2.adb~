@@ -1,0 +1,44 @@
+with Ada.Text_IO;         use Ada.Text_IO; 
+with Ada.Integer_Text_IO; use Ada.Integer_Text_IO; 
+with Ada.Float_Text_IO;   use Ada.Float_Text_IO; 
+
+
+procedure Ada_P2 is 
+   
+   
+   function "&"(Str : in String; 
+		Num : in Integer) return Integer is
+      
+   begin 
+      
+      return Integer'Value(Str) + Num; 
+      
+      
+   end "&";  
+   
+   Str : String(1..3); 
+   Num : Integer; 
+   
+begin 
+   
+   Put("Mata in en sträng: "); 
+   Get(Str); 
+   Put("Mata in ett heltal: "); 
+   Get(Num); 
+   Put("Den beräknade summan av "); 
+   Put(Str); 
+   Put(" och "); 
+   Put(Num); 
+   Put(" blir "); 
+   Put(Str & Num); 
+   
+  -- 1 operator 
+  -- 2 funktion 
+  -- 3 procedur 
+  
+  
+  
+   
+   
+   
+end Ada_P2; 

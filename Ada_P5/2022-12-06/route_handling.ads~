@@ -1,0 +1,15 @@
+package Route_Handling is 
+   
+   -- Ordningen i specifikationsfilen: 
+   -- Konstanter
+   -- Deklaration av privata datatyper 
+   -- Deklaration av underprogram som ska vara synliga utåt
+   -- Undantag
+  
+   
+private 
+
+   -- Definition av privata datatyper
+   
+   
+end Route_Handling;

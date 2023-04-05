@@ -1,0 +1,12 @@
+-- Eventuella libraries som behövs 
+
+
+package body Route_Handling is
+   
+   -- Konstanter
+   -- Undantag, procedurer och funktioner som vanligt
+   
+   -- 
+   
+   
+end Route_Handling; 

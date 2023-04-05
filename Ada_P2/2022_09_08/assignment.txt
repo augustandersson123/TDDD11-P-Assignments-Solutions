@@ -1,0 +1,108 @@
+======================================================================
+               Ada.P2 - Underprogram och problemlösning
+======================================================================
+Skapa ett program som löser följande 3 deluppgifter i samma program!
+
+Ditt program skall sen fungera som körexemplet visar.
+Krav för uppgiften finns på hemsidan.
+
+======================================================================
+
+Deluppgift 1:
+-------------
+Skapa ett underprogram som från huvudprogrammet tar in en sträng med exakt 3
+tecken och ett heltal och skickar tillbaka summan av dessa. Resultatet skall
+skickas i heltalsform (endast typomvandling).
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 2:
+-------------
+Skriv ett underprogram som från huvudprogrammet tar in en sträng med exakt 3
+tecken (endast en parameter i parameterlistan). Denna parameter fås från
+huvudprogrammet och motsvarar sidan (S) av en kvadrat.
+
+Underprogrammet skall sedan beräkna arean av kvadraten och skicka tillbaka
+resultatet till huvudprogrammet i flyttalsform (endast typomvandling).
+
+Formeln som används för beräkning av area: S * S
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 3:
+-------------
+Skriv ett underprogram som har exakt två parametrar, ett tecken och ett
+flyttal. Underprogrammet skall ta emot det första datat, multiplicera talet med
+32.7 och sedan skicka tillbaka det i flyttalsform avrundat till närmaste heltal
+nedåt till huvudprogrammet via den andra parametern.
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+======================================================================
+
+Körexempel 1:
+-------------
+Mata in en sträng: 120
+Mata in ett heltal: 120
+Den beräknade summan av 120 och 120 blir 240
+
+Mata in längden: 120
+Den beräknade arean blev: 14400.0
+
+Mata in ett tecken: 2
+produkten av 2 och 32.7 blir 65.0
+
+
+Körexempel 2:
+-------------
+Mata in en sträng: 120
+Mata in ett heltal: -83
+Den beräknade summan av 120 och -83 blir 37
+
+Mata in längden:  67
+Den beräknade arean blev: 4489.0
+
+Mata in ett tecken: 6
+produkten av 6 och 32.7 blir 196.0
+
+
+Körexempel 3:
+-------------
+Mata in en sträng: -67
+Mata in ett heltal: 120
+Den beräknade summan av -67 och 120 blir 53
+
+Mata in längden:   1
+Den beräknade arean blev: 1.0
+
+Mata in ett tecken: 0
+produkten av 0 och 32.7 blir 0.0
+
+
+Körexempel 4:
+-------------
+Mata in en sträng: -67
+Mata in ett heltal: -83
+Den beräknade summan av -67 och -83 blir -150
+
+Mata in längden: 120
+Den beräknade arean blev: 14400.0
+
+Mata in ett tecken: 2
+produkten av 2 och 32.7 blir 65.0
+

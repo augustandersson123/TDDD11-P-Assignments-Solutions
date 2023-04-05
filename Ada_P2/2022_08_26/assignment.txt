@@ -1,0 +1,120 @@
+======================================================================
+               Ada.P2 - Underprogram och problemlösning
+======================================================================
+Skapa ett program som löser följande 3 deluppgifter i samma program!
+
+Ditt program skall sen fungera som körexemplet visar.
+Krav för uppgiften finns på hemsidan.
+
+======================================================================
+
+Deluppgift 1:
+-------------
+Skriv ett underprogram som från huvudprogrammet tar in ett tecken (endast en
+parameter i parameterlistan). Denna parameter fås från huvudprogrammet och
+motsvarar sidan (S) av en liksidig triangel.
+
+Underprogrammet skall sedan beräkna arean av triangeln och skicka tillbaka
+resultatet till huvudprogrammet i flyttalsform (endast typomvandling).
+
+Formeln som används för beräkning av area: S * (S * Sqrt(3.0) / 2.0) / 2.0
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 2:
+-------------
+Skriv ett underprogram som har två eller tre parametrar.
+
+Den första parametern är ett flyttal och den andra är en sträng.
+
+Underprogrammet skall läsa in dessa två värden från tangentbordet och sedan
+skicka tillbaka dessa värden till huvudprogrammet. Alla ledtexter som behövs
+för inläsningen skall skrivas ut i underprogrammet.
+
+Dessutom skall underprogrammet beräkna resultatet då dessa divideras (de två
+tal som finns i de första två parametrarna) och skicka tillbaka resultatet (i
+heltalsform avrundat uppåt) till huvudprogrammet.
+
+Vi antar att det som användaren matar in innehåller värden som går att tolka
+som tal, oavsett datatyp vi matar in data till, eller att de åtministone går
+att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+Deluppgift 3:
+-------------
+Skapa ett underprogram som från huvudprogrammet tar in ett tecken och ett
+heltal och skickar tillbaka kvoten mellan dessa. Resultatet skall skickas i
+flyttalsform (endast typomvandling).
+
+Vi antar att parametrarna oavsett datatyp innehåller värden som går att tolka
+som tal eller att de åtministone går att omvandla till tal.
+
+OBS! Övriga generella krav finns på hemsidan.
+
+
+
+======================================================================
+
+Körexempel 1:
+-------------
+Mata in längden: 2
+Den beräknade arean blev: 1.7
+
+Mata in ett flyttal: -21.8
+Mata in en sträng med exakt 3 tecken: 120
+Du matade in flyttalet: -21.8 och strängen: 120 och kvoten blev           0
+
+Mata in ett tecken: 2
+Mata in ett heltal: 120
+Den beräknade kvoten mellan 2 och 120 blir 0.0
+
+
+Körexempel 2:
+-------------
+Mata in längden: 6
+Den beräknade arean blev: 15.6
+
+Mata in ett flyttal: -21.8
+Mata in en sträng med exakt 3 tecken: -67
+Du matade in flyttalet: -21.8 och strängen: -67 och kvoten blev           1
+
+Mata in ett tecken: 2
+Mata in ett heltal: -83
+Den beräknade kvoten mellan 2 och -83 blir -0.0
+
+
+Körexempel 3:
+-------------
+Mata in längden: 0
+Den beräknade arean blev: 0.0
+
+Mata in ett flyttal: 421.3
+Mata in en sträng med exakt 3 tecken: 120
+Du matade in flyttalet: 421.3 och strängen: 120 och kvoten blev           4
+
+Mata in ett tecken: 6
+Mata in ett heltal: 120
+Den beräknade kvoten mellan 6 och 120 blir 0.1
+
+
+Körexempel 4:
+-------------
+Mata in längden: 2
+Den beräknade arean blev: 1.7
+
+Mata in ett flyttal: 421.3
+Mata in en sträng med exakt 3 tecken: -67
+Du matade in flyttalet: 421.3 och strängen: -67 och kvoten blev          -6
+
+Mata in ett tecken: 6
+Mata in ett heltal: -83
+Den beräknade kvoten mellan 6 och -83 blir -0.1
+

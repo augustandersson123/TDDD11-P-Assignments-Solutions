@@ -1,0 +1,88 @@
+=======================================================================
+          Ada.P3 - Skapande och hantering av en datastruktur
+=======================================================================
+
+*** OBS! De krav som finns på hemsidan för Ada.P3 ingår i uppgiften.
+*** Se hemsidan för dessa krav. Vi tar inte med alla krav här för att
+*** ni skall kunna läsa dessa i lugn och ro innan P-passet.
+
+I denna uppgift skall du skapa den datastruktur som motsvarar bilden
+nedan. Det är av stor vikt att se till att datastrukturen verkligen är
+den som motsvarar bilden. Även om programmet rent funktionellt är "ok"
+kommer det inte att vara godkänt att ha en annan datastruktur.
+
+Om det finns identifierare i figuren skall dessa ha samma namn i ditt
+program.
+
+I denna uppgift kan det förekomma matriser (tvådimensionella fält),
+fält och poster. Dessa ligger antagligen inuti varandra och det är då
+viktigt att du visar att du kan skapa dessa datatyper på ett korrekt
+sätt.
+
+De data som matas in i körexemplet finns i bilden av datastrukturen
+och det är alltså meningen att de data som matas in skall hamna på de
+positioner i datastrukturen som visas.
+
+Ditt program skall alltså läsa in data från tangentbordet och lagra
+dessa data i datastrukturen för att sen skriva ut dessa data ifrån
+datastrukturen (d.v.s. inte samtidigt som datat läses in eller från
+andra variabler etc.).
+
+Inläsningen av själva datat (inte ledtexten) skall ske inuti ett
+underprogram som heter "Get" med endast en parameter (den aktuella
+datastrukturen).
+
+Utskriften av själva datat (inte ledtexten) skall ske i underprogramet
+"Put" med endast en parameter (den aktuella datastrukturen).
+
+OBS! Du får förstås inte använda dig av sidoeffekter (användande av
+globala data/variabler) i underprogrammen utan att skicka med dessa
+som parametrar. Det är alltid ok att ha konstanter global och använda
+dem överallt (även i underprogrammen). Det är detta just dessa är till
+för.
+
+Det är helt ok att skapa fler underprogram än detta. Huvudprogrammet
+skall dock endast anropa de två beskrivna ovan.
+
+
+=======================================================================
+Datastruktur att implementera:
+=======================================================================
+
+   ┌────────────────────────────────────────────────────────────────────────────────────────────┐
+   │   ┌──────────────────────────────────────────────────────────────────────────────────────┐ │
+T: │ L │    ┌───────────────────┬───────────────────┬───────────────────┬───────────────────┐ │ │
+   │   │    │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ │ │
+   │   │ -9 │ │ '4'   │ 'e'   │ │ │ 'n'   │ 'A'   │ │ │ '6'   │ 'M'   │ │ │ 'c'   │ '3'   │ │ │ │
+   │   │    │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ │ │
+   │   │    │   False   True    │   False   True    │   False   True    │   False   True    │ │ │
+   │   │    ├───────────────────┼───────────────────┼───────────────────┼───────────────────┤ │ │
+   │   │    │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ │ │
+   │   │ -8 │ │ 'w'   │ 'f'   │ │ │ 'r'   │ 'x'   │ │ │ 'l'   │ '2'   │ │ │ '7'   │ 'K'   │ │ │ │
+   │   │    │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ │ │
+   │   │    │   False   True    │   False   True    │   False   True    │   False   True    │ │ │
+   │   │    ├───────────────────┼───────────────────┼───────────────────┼───────────────────┤ │ │
+   │   │    │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ │ │
+   │   │ -7 │ │ '5'   │ 'K'   │ │ │ 'n'   │ 'e'   │ │ │ 'Q'   │ 'n'   │ │ │ '6'   │ 'Y'   │ │ │ │
+   │   │    │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ │ │
+   │   │    │   False   True    │   False   True    │   False   True    │   False   True    │ │ │
+   │   │    ├───────────────────┼───────────────────┼───────────────────┼───────────────────┤ │ │
+   │   │    │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ ┌───────┬───────┐ │ │ │
+   │   │ -6 │ │ 'q'   │ '6'   │ │ │ 'O'   │ 'p'   │ │ │ 'C'   │ 'e'   │ │ │ 'r'   │ 'H'   │ │ │ │
+   │   │    │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ └───────┴───────┘ │ │ │
+   │   │    │   False   True    │   False   True    │   False   True    │   False   True    │ │ │
+   │   │    └───────────────────┴───────────────────┴───────────────────┴───────────────────┘ │ │
+   │   │             'l'                 'k'                 'j'                 'i'          │ │
+   │   └──────────────────────────────────────────────────────────────────────────────────────┘ │
+   │   ┌──────┐                                                                                 │
+   │ K │ -3.7 │                                                                                 │
+   │   └──────┘                                                                                 │
+   └────────────────────────────────────────────────────────────────────────────────────────────┘
+
+
+=======================================================================
+Körexempel:
+=======================================================================
+Mata in datamängd: r H C e O p q 6 6 Y Q n n e 5 K 7 K l 2 r x w f c 3 6 M n A 4 e -3.7
+Inmatad datamängd: H r e C p O 6 q Y 6 n Q e n K 5 K 7 2 l x r f w 3 c M 6 A n e 4 -3.7
+=======================================================================

@@ -1,0 +1,15 @@
+package Package_Name is 
+   
+   -- Ordningen i specifikationsfilen: 
+   -- Konstanter
+   -- Deklaration av privata datatyper 
+   -- Deklaration av underprogram som ska vara synliga utåt
+   -- Undantag
+  
+   
+private 
+
+   -- Definition av privata datatyper
+   
+   
+end Package_Name;
