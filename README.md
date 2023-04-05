@@ -1,5 +1,5 @@
 # TDDD11-P-Assignments-Solutions
-Solutions to some P-Assignments from the course TDDD11, Foundational Programming. 
+Solutions to some P-Assignments from the course [TDDD11, Foundational Programming][1]. 
 
 P-Assignments are distinct from O-assignments in this course. 
 O-assignments make up the regular lab series, a total of 5 hp (credits), which is graded with Pass or Fail. 
@@ -14,3 +14,6 @@ Types and corresponding grade upon succesful completion:
 Note that new P-assignments are generated every week. Thus, all solutions in this repository are solutions to old problems. 
 
 Use at your own risk. 
+
+
+[1]: https://www.ida.liu.se/~TDDD11/current/index.sv.shtml
