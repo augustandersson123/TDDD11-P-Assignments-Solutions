@@ -1,5 +1,5 @@
 # TDDD11-P-Assignments-Solutions
-Solutions to some P-Assignments from the course [TDDD11, Foundational Programming][1]. 
+Solutions to some P-Assignments from the course [TDDD11, Introduction to Programming][1]. 
 
 P-Assignments are distinct from O-assignments in this course. 
 O-assignments make up the regular lab series, a total of 5 hp (credits), which is graded with Pass or Fail. 
